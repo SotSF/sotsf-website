@@ -41,3 +41,23 @@ This repository is 🔋 battery packed with:
 - 👀 Open Graph Helper Function — Awesome open graph generated using [og](https://github.com/theodorusclarence/og), fork it and deploy!
 - 🗺 Site Map — Automatically generate sitemap.xml
 - 📦 Expansion Pack — Easily install common libraries, additional components, and configs.
+
+## Deploying
+
+Also will explain why we have `brollin/sotsf-website` as well as `sotsf/sotsf-website`.
+
+Vercel does not allow you to deploy and organization repo like `sotsf/sotsf-website` on their free hobby tier. So instead, we deploy `brollin/sotsf-website`.
+
+To deploy, all you have to do is to push a new commit to the `main` branch. First you will need to be a collaborator on the `brollin/sotsf-website` repo, so just ask Ben for that.
+
+For ease, you should clone `sotsf/sotsf-website`. Then you can set up a new remote called `prod` to point at `brollin/sotsf-website`:
+
+```
+git remote add prod ssh://git@github.com/brollin/conjurer.git
+```
+
+And then to deploy would just look like:
+
+```
+git remote add prod ssh://git@github.com/brollin/conjurer.git
+```
