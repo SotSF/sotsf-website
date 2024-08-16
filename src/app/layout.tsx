@@ -3,6 +3,8 @@ import * as React from 'react';
 
 import '@/styles/globals.css';
 
+import UnderlineLink from '@/components/links/UnderlineLink';
+
 import { siteConfig } from '@/constant/config';
 
 export const metadata: Metadata = {
@@ -45,7 +47,16 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        {children}
+
+        <footer className='absolute bottom-2 w-full flex items-center justify-center text-center'>
+          © {new Date().getFullYear()} By{' '}
+          <UnderlineLink href='https://se.cretfi.re'>
+            Servants of the Secret Fire
+          </UnderlineLink>
+        </footer>
+      </body>
     </html>
   );
 }

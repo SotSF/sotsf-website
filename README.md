@@ -46,7 +46,7 @@ This repository is 🔋 battery packed with:
 
 Also will explain why we have `brollin/sotsf-website` as well as `sotsf/sotsf-website`.
 
-Vercel does not allow you to deploy and organization repo like `sotsf/sotsf-website` on their free hobby tier. So instead, we deploy `brollin/sotsf-website`.
+Vercel does not allow you to deploy an organization repo like `sotsf/sotsf-website` on their free hobby tier. So instead, we deploy `brollin/sotsf-website`.
 
 To deploy, all you have to do is to push a new commit to the `main` branch. First you will need to be a collaborator on the `brollin/sotsf-website` repo, so just ask Ben for that.
 

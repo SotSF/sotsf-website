@@ -1,4 +1,6 @@
 'use client';
+
+import { Hammer } from 'lucide-react';
 import '@/lib/env';
 
 import ButtonLink from '@/components/links/ButtonLink';
@@ -15,16 +17,16 @@ export default function HomePage() {
           <h1 className='mt-4'>Servants of the Secret Fire</h1>
           <p className='mt-2 text-sm'>you shall not pass, etc</p>
 
-          <ButtonLink className='mt-10' href='/components' variant='light'>
-            See all components
+          <ButtonLink variant='outline' className='my-10' href='/canopy'>
+            Canopy page
           </ButtonLink>
 
-          <footer className='absolute bottom-2'>
-            © {new Date().getFullYear()} By{' '}
-            <UnderlineLink href='https://se.cretfi.re'>
-              Servants of the Secret Fire
-            </UnderlineLink>
-          </footer>
+          <Hammer size='6em' />
+          <p className='mt-2'>Currently under construction!</p>
+
+          <UnderlineLink className='mt-2' href='/components'>
+            Component library
+          </UnderlineLink>
         </div>
       </section>
     </main>
