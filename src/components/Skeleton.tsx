@@ -7,10 +7,10 @@ type SkeletonProps = React.ComponentPropsWithoutRef<'div'>;
 export default function Skeleton({ className, ...rest }: SkeletonProps) {
   return (
     <div
-      className={cn('animate-shimmer bg-[#f6f7f8]', className)}
+      className={cn('animate-shimmer bg-[#222222]', className)}
       style={{
         backgroundImage:
-          'linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%)',
+          'linear-gradient(to right, #222222 0%, #333333 20%, #222222 40%, #222222 100%)',
         backgroundSize: '700px 100%',
         backgroundRepeat: 'no-repeat',
       }}
