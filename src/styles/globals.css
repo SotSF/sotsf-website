@@ -40,6 +40,10 @@
       U+2215, U+FEFF, U+FFFD;
   }
 
+  html {
+    @apply text-gray-300;
+  }
+
   .cursor-newtab {
     cursor: url('/images/new-tab.png') 10 10, pointer;
   }

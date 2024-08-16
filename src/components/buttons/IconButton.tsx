@@ -30,7 +30,7 @@ const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
       disabled: buttonDisabled,
       isLoading,
       variant = 'primary',
-      isDarkBg = false,
+      isDarkBg = true,
       icon: Icon,
       classNames,
       ...rest

@@ -30,7 +30,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       isLoading,
       variant = 'primary',
       size = 'base',
-      isDarkBg = false,
+      isDarkBg = true,
       leftIcon: LeftIcon,
       rightIcon: RightIcon,
       classNames,

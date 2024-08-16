@@ -36,7 +36,7 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
       className,
       variant = 'primary',
       size = 'base',
-      isDarkBg = false,
+      isDarkBg = true,
       leftIcon: LeftIcon,
       rightIcon: RightIcon,
       classNames,
