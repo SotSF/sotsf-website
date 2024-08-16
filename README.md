@@ -53,11 +53,11 @@ To deploy, all you have to do is to push a new commit to the `main` branch. Firs
 For ease, you should clone `sotsf/sotsf-website`. Then you can set up a new remote called `prod` to point at `brollin/sotsf-website`:
 
 ```
-git remote add prod ssh://git@github.com/brollin/conjurer.git
+git remote add prod ssh://git@github.com/brollin/sotsf-website.git
 ```
 
 And then to deploy would just look like:
 
 ```
-git remote add prod ssh://git@github.com/brollin/conjurer.git
+git remote add prod ssh://git@github.com/brollin/sotsf-website.git
 ```
