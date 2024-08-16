@@ -51,8 +51,8 @@ export default function RootLayout({
         {children}
 
         <footer className='absolute bottom-2 w-full flex items-center justify-center text-center'>
-          © {new Date().getFullYear()} By{' '}
-          <UnderlineLink href='https://se.cretfi.re'>
+          © {new Date().getFullYear()} By
+          <UnderlineLink className='ml-1' href='https://se.cretfi.re'>
             Servants of the Secret Fire
           </UnderlineLink>
         </footer>
