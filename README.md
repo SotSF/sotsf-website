@@ -41,4 +41,4 @@ This repository is 🔋 battery packed with:
 
 ## Deploying
 
-We deploy this website as a static site on Render.com. We deploy manually (just requires clicking a button) in the Render.com dashboard, bot can set up a GitHub action in the future to do so on push.
+We deploy this website as a static site on Render.com via Github Action. Just push or merge to the main branch to deploy.
