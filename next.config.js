@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  output: 'export',
   eslint: {
     dirs: ['src'],
   },
 
+  images: { unoptimized: true },
   reactStrictMode: true,
   swcMinify: true,
 

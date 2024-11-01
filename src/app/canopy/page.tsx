@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import '@/lib/env';
 
-import ContactImage from '~/public/images/contact.png';
+import ContactImage from '~/images/contact.png';
 
 export default function HomePage() {
   return (
