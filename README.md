@@ -44,20 +44,4 @@ This repository is 🔋 battery packed with:
 
 ## Deploying
 
-Also will explain why we have `brollin/sotsf-website` as well as `sotsf/sotsf-website`.
-
-Vercel does not allow you to deploy an organization repo like `sotsf/sotsf-website` on their free hobby tier. So instead, we deploy `brollin/sotsf-website`.
-
-To deploy, all you have to do is to push a new commit to the `main` branch. First you will need to be a collaborator on the `brollin/sotsf-website` repo, so just ask Ben for that.
-
-For ease, you should clone `sotsf/sotsf-website`. Then you can set up a new remote called `prod` to point at `brollin/sotsf-website`:
-
-```
-git remote add prod ssh://git@github.com/brollin/sotsf-website.git
-```
-
-And then to deploy would just look like:
-
-```
-git remote add prod ssh://git@github.com/brollin/sotsf-website.git
-```
+We deploy this website as a static site on Render.com. We deploy manually (just requires clicking a button) in the Render.com dashboard, bot can set up a GitHub action in the future to do so on push.
