@@ -7,11 +7,14 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
       - uses: actions/checkout@v3
       - name: Build
         run: |
-          npm install
-          npm build
+          pnpm install
+          pnpm build
 
       - name: Deploy
         # Only run this step if the branch is main
