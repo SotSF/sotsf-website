@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import '@/lib/env';
 
+import ContactImage from '~/public/images/contact.png';
+
 export default function HomePage() {
   return (
     <main>
@@ -21,7 +23,7 @@ export default function HomePage() {
 
           <Image
             className='my-4'
-            src='/images/contact.png'
+            src={ContactImage}
             alt='contact'
             width={300}
             height={300}
