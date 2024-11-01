@@ -15,7 +15,7 @@ export default function HomePage() {
         <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
           <Logo className='w-16' />
           <h1 className='mt-4'>Servants of the Secret Fire</h1>
-          <p className='mt-2 text-sm'>you shall not pass, etc</p>
+          <p className='mt-2 text-sm'>you shall not pass, etc.</p>
 
           <ButtonLink variant='outline' className='my-10' href='/canopy'>
             Canopy page
