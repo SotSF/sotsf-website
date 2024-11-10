@@ -1,12 +1,6 @@
 'use client';
-
-import { Hammer } from 'lucide-react';
 import '@/lib/env';
 
-import ButtonLink from '@/components/links/ButtonLink';
-import UnderlineLink from '@/components/links/UnderlineLink';
-
-import Logo from '~/svg/Logo.svg';
 import gate from 'public/images/gate.jpg';
 import Image from 'next/image';
 
