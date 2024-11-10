@@ -9,10 +9,7 @@ export default function HomePage() {
     <main>
       <section className='bg-black'>
         <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
-          <Image
-            src={gate}
-            alt="Speak friend and enter"
-          ></Image>
+          <Image src={gate} alt='Speak friend and enter'></Image>
         </div>
       </section>
     </main>
