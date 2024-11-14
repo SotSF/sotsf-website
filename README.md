@@ -41,4 +41,20 @@ This repository is 🔋 battery packed with:
 
 ## Deploying
 
-We deploy this website as a static site on Render.com via Github Action. Just push or merge to the main branch to deploy.
+We host the SotSF website on Vercel. Vercel does not allow you to deploy an organization repo like `sotsf/sotsf-website` on their free hobby tier. So instead, we deploy `secret-fire-dev/sotsf-website`. `secret-fire-dev` is a shared GitHub account that exists for this sole reason. `secret-fire-dev/sotsf-website` is an exact copy of the `sotsf/sotsf-website` repo.
+
+To deploy, all you have to do is to push a new commit to the `main` branch of the `secret-fire-dev/sotsf-website` repo. First you will need to be a collaborator on the `secret-fire-dev/sotsf-website` repo, so just ask around for that.
+
+For ease of development, you should clone `sotsf/sotsf-website`. Then you can set up a new remote called `prod` to point at `secret-fire-dev/sotsf-website`:
+
+```
+git remote add prod ssh://git@github.com/secret-fire-dev/sotsf-website.git
+```
+
+And then to deploy would just look like:
+
+```
+git push prod
+```
+
+When you push a new commit to the main branch, there will be a Vercel action that actually performs the deploy. You can click it for more details if desired, but you should see your changes go live 3-4 minutes after running `git push prod`.
