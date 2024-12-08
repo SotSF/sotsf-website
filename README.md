@@ -5,11 +5,24 @@
 
 ## Development
 
+First, follow these one-time steps to install system-level dependencies:
+
+```bash
+# install nvm, which manages node version installs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+# use nvm to install the correct version of node
+nvm install
+# install pnpm, our package manager of choice, via corepack
+corepack enable
+```
+
+Install repository dependencies:
+
 ```bash
 pnpm install
 ```
 
-You can start the server using this command:
+Then start the server using this command:
 
 ```bash
 pnpm dev
@@ -19,13 +32,14 @@ Open [http://localhost:3001](http://localhost:3001) with your browser to see the
 
 ## Features
 
-This repository is 🔋 battery packed with:
+This repository was created from a template. Here are some of its features (as well as features that we have added):
 
 - ⚡️ Next.js 14 with App Router
 - ⚛️ React 18
 - ✨ TypeScript
 - 💨 Tailwind CSS 3 — Configured with CSS Variables to extend the **primary** color
 - 💎 Pre-built Components — Components that will **automatically adapt** with your brand color, [check here for the demo](https://tsnext-tw.thcl.dev/components)
+- Additionally [shadcn](https://ui.shadcn.com/) components
 - 🃏 Jest — Configured for unit testing
 - 📈 Absolute Import and Path Alias — Import components using `@/` prefix
 - 📏 ESLint — Find and fix problems in your code, also will **auto sort** your imports
