@@ -3,8 +3,6 @@ import * as React from 'react';
 
 import '@/styles/globals.css';
 
-import UnderlineLink from '@/components/links/UnderlineLink';
-
 import { siteConfig } from '@/constant/config';
 
 export const metadata: Metadata = {
@@ -45,7 +43,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>
+      <body className='dark'>
         {children}
 
         <footer className='absolute bottom-2 w-full flex items-center justify-center text-center'>
